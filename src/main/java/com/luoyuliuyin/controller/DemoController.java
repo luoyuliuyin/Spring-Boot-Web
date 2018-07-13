@@ -28,6 +28,7 @@ public class DemoController {
         return "demo.ftl";
     }
 
+    //@ResponseBody 在使用此注解之后不会再走试图处理器，而是直接将数据写入到输入流中
     @ResponseBody
     @RequestMapping("demo.json")
     private String demoJson(HttpServletRequest request, ModelMap modelMap) {
