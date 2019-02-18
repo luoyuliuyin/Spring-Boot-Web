@@ -4,7 +4,7 @@
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %highlight(%5p) %green(%c{50}:%L) - %m%n</pattern>
+            <pattern>%boldMagenta(%d{yyyy-MM-dd HH:mm:ss.SSS}) [%t] %highlight(%5p) %green(%c{50}:%L) - %m%n</pattern>
         </layout>
     </appender>
 
@@ -14,7 +14,7 @@
             <MaxHistory>7</MaxHistory>
         </rollingPolicy>
         <layout class="ch.qos.logback.classic.PatternLayout">
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %highlight(%5p) %green(%c{50}:%L) - %m%n</pattern>
+            <pattern>%boldMagenta(%d{yyyy-MM-dd HH:mm:ss.SSS}) [%t] %highlight(%5p) %green(%c{50}:%L) - %m%n</pattern>
         </layout>
         <!--过滤器，只记录INFO级别的日志-->
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
@@ -30,7 +30,7 @@
             <MaxHistory>7</MaxHistory>
         </rollingPolicy>
         <layout class="ch.qos.logback.classic.PatternLayout">
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %highlight(%5p) %green(%c{50}:%L) - %m%n</pattern>
+            <pattern>%boldMagenta(%d{yyyy-MM-dd HH:mm:ss.SSS}) [%t] %highlight(%5p) %green(%c{50}:%L) - %m%n</pattern>
         </layout>
         <!--过滤器，只记录ERROR级别的日志-->
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
