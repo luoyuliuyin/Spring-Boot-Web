@@ -17,7 +17,7 @@
             <pattern>%boldMagenta(%d{yyyy-MM-dd HH:mm:ss.SSS}) [%boldCyan(%t)] %boldBlue(%p) %boldGreen(%c{50}:%L) - %m%n</pattern>
         </layout>
         <!--过滤器，只记录INFO级别的日志-->
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
         </filter>
     </appender>
@@ -31,7 +31,7 @@
             <pattern>%boldMagenta(%d{yyyy-MM-dd HH:mm:ss.SSS}) [%boldCyan(%t)] %boldBlue(%p) %boldGreen(%c{50}:%L) - %m%n</pattern>
         </layout>
         <!--过滤器，只记录ERROR级别的日志-->
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>ERROR</level>
         </filter>
     </appender>
