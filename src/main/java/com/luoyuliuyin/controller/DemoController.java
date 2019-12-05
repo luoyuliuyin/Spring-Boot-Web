@@ -22,7 +22,7 @@ public class DemoController {
 
     @RequestMapping("demo.do")
     private String demo(HttpServletRequest request, ModelMap modelMap) {
-        logger.info("message", "demo");
+        logger.info("message:{}", "demo");
         modelMap.put("message", "demo");
         modelMap.put("contextPath", request.getContextPath());
         return "demo.ftl";
