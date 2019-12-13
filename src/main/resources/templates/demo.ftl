@@ -1,5 +1,5 @@
 <script src="demo.js"></script>
-<script src="jquery-1.10.2.min.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
 
 <title>demo</title>
 

@@ -20,7 +20,7 @@ public class DemoController {
 
     private static final Logger logger = LoggerFactory.getLogger(DemoController.class);
 
-    @RequestMapping("demo.do")
+    @RequestMapping("/")
     private String demo(HttpServletRequest request, ModelMap modelMap) {
         logger.info("message:{}", "demo");
         modelMap.put("message", "demo");

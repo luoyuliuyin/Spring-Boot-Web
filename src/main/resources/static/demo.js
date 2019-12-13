@@ -7,7 +7,7 @@ function alert_message() {
     $.ajax({
         url: "demo.json",
         success: function (data) {
-            alert(data.message);
+            alert(data);
         },
         error: function () {
         }
